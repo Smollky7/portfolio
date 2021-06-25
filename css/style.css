@@ -35,14 +35,6 @@ a:hover {
     display: flex;
 }
 
-@media screen and (max-width: 768px) {
-    .wrapper {
-        height: auto;
-        min-height: auto;
-        padding-top: 100px;
-    }
-}
-
 .profile-card {
     width: 100%;
     min-height: 460px;
@@ -86,13 +78,6 @@ a:hover {
     position: relative;
     z-index: 4;
     box-shadow: 0px 5px 50px 0px #6c44fc, 0px 0px 0px 7px rgba(107, 74, 255, 0.5);
-}
-
-@media screen and(max-width:576px) {
-    .profile-card__img {
-        width: 120px;
-        height: 120px;
-    }
 }
 
 .profile-card__img img {
@@ -160,13 +145,6 @@ a:hover {
     min-width: 150px;
 }
 
-@media screen and (max-width:768px) {
-    .profile-card-inf__item {
-        padding: 10px 20px;
-        min-width: 120px;
-    }
-}
-
 .profile-card-inf__title {
     font-weight: 700;
     font-size: 27px;
@@ -201,20 +179,6 @@ a:hover {
     font-size: 21px;
     flex-shrink: 0;
     transition: all .3s;
-}
-
-@media screen and (max-width: 768px) {
-    .profile-card-social__item {
-        width: 50px;
-        height: 50px;
-        margin: 10px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .profile-card-social__item:hover {
-        transform: scale(1.2);
-    }
 }
 
 .profile-card-social__item.facebook {
@@ -263,12 +227,6 @@ a:hover {
     margin-top: 40px;
 }
 
-@media screen and (max-width: 576px) {
-    .profile-card-ctr {
-        flex-wrap: wrap;
-    }
-}
-
 .profile-card__button {
     background: none;
     border: none;
@@ -286,34 +244,8 @@ a:hover {
     transition: all .3s;
 }
 
-@media screen and (max-width: 768px) {
-    .profile-card__button {
-        min-width: 170px;
-        margin: 15px 25px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .profile-card__button {
-        min-height: inherit;
-        margin: 0;
-        margin-bottom: 16px;
-        width: 100%;
-        max-width: 300px;
-    }
-    .profile-card__button:last-child {
-        margin-bottom: 0;
-    }
-}
-
 .profile-card__button:focus {
     outline: none !important;
-}
-
-@media screen and (min-width:768px) {
-    .profile-card__button:hover {
-        transform: translateY(-5px);
-    }
 }
 
 .profile-card__button:first-child {
@@ -342,13 +274,62 @@ a:hover {
     box-shadow: 0px 7px 30px rgba(223, 45, 70, 0.75);
 }
 
-#estudo {
+.projects {
     margin: auto;
     margin-top: 35px;
     width: 350px;
+    border-radius: 15px;
+}
+.projects_letter {
+    color: #324E63;
 }
 @media screen and (max-width: 768px) {
-    #estudo {
-    width: 100px
+    .wrapper {
+        height: auto;
+        min-height: auto;
+        padding-top: 100px;
+    }
+    .profile-card__button {
+        min-width: 170px;
+        margin: 15px 25px;
+    }
+    .profile-card__button {
+        min-height: inherit;
+        margin: 0;
+        margin-bottom: 16px;
+        width: 100%;
+        max-width: 300px;
+    }
+    .profile-card__button:last-child {
+        margin-bottom: 0;
+    }
+    .profile-card-social__item {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+    .profile-card-inf__item {
+        padding: 10px 20px;
+        min-width: 120px;
+    }
+    .projects {
+    width: 250px
+    }
+}
+@media screen and (min-width:768px) {
+    .profile-card__button:hover {
+        transform: translateY(-5px);
+    }
+    .profile-card-social__item:hover {
+        transform: scale(1.2);
+    }
+}
+@media screen and (max-width: 576px) {
+    .profile-card-ctr {
+        flex-wrap: wrap;
+    }
+    .profile-card__img {
+        width: 120px;
+        height: 120px;
     }
 }
