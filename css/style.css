@@ -347,3 +347,8 @@ a:hover {
     margin-top: 35px;
     width: 350px;
 }
+@media screen and (max-width: 768px) {
+    #estudo {
+    width: 150px
+    }
+}
